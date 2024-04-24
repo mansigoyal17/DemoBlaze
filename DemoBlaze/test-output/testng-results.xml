@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="36526" started-at="2024-04-24T14:14:52 EDT" finished-at="2024-04-24T14:15:29 EDT">
+    <groups>
+    </groups>
+    <test name="FirefoxTest" duration-ms="36526" started-at="2024-04-24T14:14:52 EDT" finished-at="2024-04-24T14:15:29 EDT">
+      <class name="DemoBlaze.testCases.TestCase3">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:DemoBlaze.testCases.TestCase3@3439f68d]" name="setup" is-config="true" duration-ms="16413" started-at="2024-04-24T14:14:52 EDT" finished-at="2024-04-24T14:15:09 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="category()[pri:4, instance:DemoBlaze.testCases.TestCase3@3439f68d]" name="category" duration-ms="17434" started-at="2024-04-24T14:15:09 EDT" finished-at="2024-04-24T14:15:26 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- category -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:DemoBlaze.testCases.TestCase3@3439f68d]" name="tearDown" is-config="true" duration-ms="2600" started-at="2024-04-24T14:15:26 EDT" finished-at="2024-04-24T14:15:29 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- DemoBlaze.testCases.TestCase3 -->
+    </test> <!-- FirefoxTest -->
+  </suite> <!-- Suite -->
+</testng-results>
