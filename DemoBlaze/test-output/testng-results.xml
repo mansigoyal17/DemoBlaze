@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="36526" started-at="2024-04-24T14:14:52 EDT" finished-at="2024-04-24T14:15:29 EDT">
+  <suite name="Suite" duration-ms="67263" started-at="2024-04-24T15:20:02 EDT" finished-at="2024-04-24T15:21:09 EDT">
     <groups>
     </groups>
-    <test name="FirefoxTest" duration-ms="36526" started-at="2024-04-24T14:14:52 EDT" finished-at="2024-04-24T14:15:29 EDT">
+    <test name="FirefoxTest" duration-ms="67263" started-at="2024-04-24T15:20:02 EDT" finished-at="2024-04-24T15:21:09 EDT">
       <class name="DemoBlaze.testCases.TestCase3">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:DemoBlaze.testCases.TestCase3@3439f68d]" name="setup" is-config="true" duration-ms="16413" started-at="2024-04-24T14:14:52 EDT" finished-at="2024-04-24T14:15:09 EDT">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:DemoBlaze.testCases.TestCase3@1442d7b5]" name="setup" is-config="true" duration-ms="6212" started-at="2024-04-24T15:20:45 EDT" finished-at="2024-04-24T15:20:52 EDT">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,61 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="category()[pri:4, instance:DemoBlaze.testCases.TestCase3@3439f68d]" name="category" duration-ms="17434" started-at="2024-04-24T14:15:09 EDT" finished-at="2024-04-24T14:15:26 EDT">
+        <test-method status="PASS" signature="category()[pri:4, instance:DemoBlaze.testCases.TestCase3@1442d7b5]" name="category" duration-ms="16007" started-at="2024-04-24T15:20:52 EDT" finished-at="2024-04-24T15:21:08 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- category -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:DemoBlaze.testCases.TestCase3@3439f68d]" name="tearDown" is-config="true" duration-ms="2600" started-at="2024-04-24T14:15:26 EDT" finished-at="2024-04-24T14:15:29 EDT">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:DemoBlaze.testCases.TestCase3@1442d7b5]" name="tearDown" is-config="true" duration-ms="1672" started-at="2024-04-24T15:21:08 EDT" finished-at="2024-04-24T15:21:09 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- DemoBlaze.testCases.TestCase3 -->
+      <class name="DemoBlaze.testCases.TestCase2">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:DemoBlaze.testCases.TestCase2@4e4aea35]" name="setup" is-config="true" duration-ms="6313" started-at="2024-04-24T15:20:26 EDT" finished-at="2024-04-24T15:20:32 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="addtoCart()[pri:2, instance:DemoBlaze.testCases.TestCase2@4e4aea35]" name="addtoCart" duration-ms="11095" started-at="2024-04-24T15:20:32 EDT" finished-at="2024-04-24T15:20:43 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addtoCart -->
+        <test-method status="PASS" signature="purchase()[pri:3, instance:DemoBlaze.testCases.TestCase2@4e4aea35]" name="purchase" duration-ms="305" started-at="2024-04-24T15:20:43 EDT" finished-at="2024-04-24T15:20:44 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- purchase -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:DemoBlaze.testCases.TestCase2@4e4aea35]" name="tearDown" is-config="true" duration-ms="1833" started-at="2024-04-24T15:20:44 EDT" finished-at="2024-04-24T15:20:45 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- DemoBlaze.testCases.TestCase2 -->
+      <class name="DemoBlaze.testCases.TestCase1">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:DemoBlaze.testCases.TestCase1@276438c9]" name="setup" is-config="true" duration-ms="9097" started-at="2024-04-24T15:20:03 EDT" finished-at="2024-04-24T15:20:12 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="signUpTest()[pri:1, instance:DemoBlaze.testCases.TestCase1@276438c9]" name="signUpTest" duration-ms="11403" started-at="2024-04-24T15:20:12 EDT" finished-at="2024-04-24T15:20:23 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:DemoBlaze.testCases.TestCase1@276438c9]" name="tearDown" is-config="true" duration-ms="2333" started-at="2024-04-24T15:20:24 EDT" finished-at="2024-04-24T15:20:26 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- DemoBlaze.testCases.TestCase1 -->
     </test> <!-- FirefoxTest -->
   </suite> <!-- Suite -->
 </testng-results>
