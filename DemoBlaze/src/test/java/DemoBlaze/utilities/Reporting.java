@@ -6,10 +6,15 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
 
+import com.automation.pim.testCases.BaseClass;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
@@ -60,16 +65,18 @@ public class Reporting extends TestListenerAdapter {
 		logger = extent.createTest(tr.getName());
 		logger.log(Status.FAIL, MarkupHelper.createLabel(tr.getName(), ExtentColor.RED));
 
-		String screenshotPath = System.getProperty("user.dir") + "\\Screenshots\\" + tr.getName() + ".png";
-
-		File f = new File(screenshotPath);
-
-		if (f.exists()) {
-
-			logger.fail("Screenshot is below:" + logger.addScreenCaptureFromPath(screenshotPath));
-
+	    try {
+			String screenShotPath = captureScreen(BaseClass.driver, tr.getName());
+			File f = new File(screenShotPath);
+			if (f.exists()) {
+				logger.fail("Screenshot is below:" + logger.addScreenCaptureFromPath(screenShotPath));
+			}		
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
+		
 	}
+
 
 	public void onTestSkipped(ITestResult tr) {
 
@@ -79,5 +86,23 @@ public class Reporting extends TestListenerAdapter {
 	
 	public void onFinish(ITestContext testContext) {
 		extent.flush();
+	}
+	
+public String captureScreen(WebDriver driver, String tname) throws IOException{
+		
+		String dateName = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
+		
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		
+		File source = ts.getScreenshotAs(OutputType.FILE);
+		
+		String target = System.getProperty("user.dir") + "/Screenshots/"+tname+"_"+dateName+".png";
+		
+		File finalLocation = new File(target);
+		
+		FileUtils.copyFile(source, finalLocation);
+		
+		return target;
+		
 	}
 }
